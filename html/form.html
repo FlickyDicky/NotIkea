@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/form.css" />
+    <link rel="stylesheet" href="../css/theme-selector.css" />
+    <link rel="icon" href="../img/favicon.ico" />
+    <title>Not Ikea</title>
+  </head>
+
+  <body id="theme">
+    <div class="loadingScreen">
+      <h1>Loading...</h1>
+      <br />
+      <div class="loader"></div>
+      <br />
+      <h3>Not IKEA: Where clouds do have a chace for meatballs.</h3>
+    </div>
+    <div id="top"></div>
+    <div class="nav">
+      <img src="../img/ikealogo.png" alt="notIkeaLogo" />
+      <div class="links">
+        <a href="../index.html" class="btn">Home</a>
+        <a href="location.html" class="btn">Location</a>
+        <a href="catalogue.html" class="btn">Catalogue</a>
+        <a href="" class="btn">Want to work with us!</a>
+      </div>
+      <!-- DROPDOWN-MENU -->
+      <div id="dropdown-menu" class="menu">
+        <div class="menu-content">
+          <img src="../img/ikealogo.png#theme" alt="notIkeaLogo" />
+          <h1>Dark mode!</h1>
+          <a href="../index.html#theme" class="btn">Home</a>
+          <a href="location.html#theme" class="btn">Location</a>
+          <a href="catalogue.html#theme" class="btn">Catalogue</a>
+          <a href="#dropdown-menu" class="btn">Want to work with us!</a>
+        </div>
+        <div class="switch-container">
+          <div class="switch">
+            <a href="#theme" id="dark-mode"></a>
+            <a href="#/" id="light-mode"></a>
+            <div class="circle"></div>
+            <div class="slider-space"></div>
+          </div>
+        </div>
+      </div>
+      <!-- END OF DROPDOWN-MENU -->
+
+      <!-- HAMBURGER -->
+      <div class="hamburger-container">
+        <!-- CLOSE -->
+        <a href="#/" class="close-menu"></a>
+        <!-- OPEN -->
+        <a href="#dropdown-menu" class="open-menu"></a>
+
+        <div class="hamburger">
+          <div class="line line-1"></div>
+          <div class="line line-2"></div>
+          <div class="line line-3"></div>
+        </div>
+      </div>
+      <!-- END OF HAMBURGER -->
+    </div>
+    <div class="container">
+      <div class="card-container">
+        <div class="card-container-col">
+          <div class="card">
+            <h2>Want to work with us?</h2>
+            <br />
+            <p>
+              Working for not IKEA is like being part of a big, happy family. We
+              pride ourselves on our friendly and supportive work environment,
+              where everyone is encouraged to bring their unique talents and
+              ideas to the table. We value our employees and believe in
+              investing in their growth and development, both personally and
+              professionally. Plus, with our commitment to delivering
+              high-quality products and exceptional customer service, you can
+              feel proud to be part of a team that's making a difference in
+              people's lives. If you're looking for a workplace where you can
+              feel valued, challenged, and fulfilled, not IKEA could be the
+              perfect fit for you!
+            </p>
+            <br />
+            <div class="shoutout">And like... Why not.</div>
+          </div>
+          <div class="card form">
+            <form action="example.htm">
+              <div class="item name">
+                <h2>Full Name:</h2>
+                <br>
+                <input
+                  class="textarea outline-focus"
+                  type="text"
+                  placeholder="Name..."
+                />
+              </div>
+              <div class="item email">
+                <h2>Email:</h2>
+                <br>
+                <input
+                  class="textarea outline-focus"
+                  type="text"
+                  placeholder="example@email.com"
+                />
+              </div>
+              <div class="item number">
+                <h2>Contact Number:</h2>
+                <br>
+                <input
+                  class="textarea outline-focus"
+                  type="text"
+                  value="+34 "
+                  placeholder="xxxxxxxxx"
+                />
+              </div>
+              <div class="item comment">
+                <h2>Why do you want to work with our team:</h2>
+                <br>
+                <textarea
+                  class="textarea outline-focus"
+                  placeholder="Comment..."
+                ></textarea>
+              </div>
+              <button type="submit" class="submit-btn">Send</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

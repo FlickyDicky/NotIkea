@@ -1,0 +1,67 @@
+@import url(style.css);
+
+@keyframes outlineVisible {
+    from {
+        opacity: 1;
+    }
+}
+
+.form:hover {
+    animation: none !important;
+}
+
+form>.item>:last-child{
+    color: var(--text-color);
+    background-color: var(--dark-main);
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    align-content: center;
+}
+
+form .item {
+    flex: 1;
+}
+
+form .number {
+    flex-basis: 100%;
+}
+
+form .comment {
+    flex-basis: 100%;
+}
+
+textarea {
+    font-family: system-ui;
+    height: 8rem;
+}
+
+.textarea {
+    width: 100%;
+    padding: 1rem;
+    border: 0;
+    border-radius: .5rem;
+}
+
+.outline-focus:focus {
+    outline: var(--blue-color) 2px solid;
+}
+
+form .submit-btn {
+    background-color: var(--blue-color);
+    padding: 1em 4em;
+    border: var(--dark-main) 2px solid;
+    border-radius: 100vw;
+    color: var(--main-color);
+    font-weight: bold;
+    transition: transform 200ms, background-color 200ms;
+}
+
+.submit-btn:hover {
+    background-color: var(--btn-hover);
+    transform: translateY(-.125rem);
+}

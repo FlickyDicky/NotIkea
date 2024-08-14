@@ -1,0 +1,77 @@
+@import url(style.css);
+
+#light-mode, #dark-mode {
+    z-index: 15;
+    inset: 0;
+}
+
+#dark-mode {
+    position: absolute;
+}
+
+#theme:target #dark-mode {
+    position: relative;
+}
+
+#theme:target #light-mode {
+    position: absolute;
+}
+
+
+#theme:target .introDisplay h1::after {
+    background-color: white;
+}
+
+#theme:target {
+    --main-color: hsl(210, 29%, 13%);
+    color: white;
+    --shadow-color: black;
+}
+
+#theme:target iframe {
+    filter: invert(90%) hue-rotate(180deg);
+}
+
+#theme:target .item>:last-child {
+    background-color: hsl(204, 64%, 28%);
+    color: white;
+} 
+
+
+.switch-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 40vh;
+}
+
+.switch {
+    position: absolute;
+    justify-content: flex-end;
+    display: flex;
+    right: 2rem;
+    bottom: 1rem;
+    width: 5vw;
+    height: 5vh;
+    border-radius: 100vw;
+    padding: .2rem;
+    border: var(--main-color) solid .125em;
+    background-color: var(--dark-blue);
+}
+
+#theme:target .slider-space {
+    width: 0%;
+}
+
+.slider-space {
+    transition: width 200ms ease;
+    width: 100%;
+}
+
+.circle {
+    height: 100%;
+    aspect-ratio: 1/1;
+    border-radius: 100vw;
+    background-color: var(--main-color);
+}
